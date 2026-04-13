@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Nolan Lavenus</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Flat UI Icons -->
+        <!-- Flaticon uIcons (Thin Straight) -->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel ="stylesheet" href = "css/styles.css">
+        <link rel ="stylesheet" href = "css/styles_custom.css">
+        <link href="css/MarkerCluster.css" rel="stylesheet">
+        <link href="css/MarkerCluster.Default.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </head>
+
+    <!-- Body -->
+    <body id="page-top">
+
+        <!-- Navigation-->
+        <nav id="nav-desktop" class="navbar-custom">
+            <div class="horizontal-wrapper">
+                <span class="nav-brand">Menu</span>
+                <ul class="nav-links">
+                    <li><a href="#page-top">Haut de page</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#sig">SIG</a></li>
+                    <li><a href="#naturalisme">Naturalisme</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#observations">Observations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="nav-mobile">
+            <button class="menu-toggle" aria-label="Ouvrir le menu" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <div class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <span class="nav-menu">Menu</span>
+                    <button class="close-menu" id="menu-close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#page-top">Haut de page</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#sig">SIG</a></li>
+                    <li><a href="#naturalisme">Naturalisme</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sidebar-overlay"></div>
+
+        <!-- Header-->
+        <header class="masthead_3 d-flex align-items-center">
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/vids/MVI_4142.MOV" type="video/mp4">
+            </video>
+            <div class=masthead-4>
+                <div class="container px-4 px-lg-5 text-center">
+                    <h1 class="mb-1">Nolan Lavenus</h1>
+                    <h3 class="mb-5">
+                        <em>Office Français de la Biodiversité<br></em>
+                        <em>Stage 2026</em>
+                    </h3>
+                    <a class="btn btn-more" href="#about">Découvrir plus</a>
+                </div>
+            </div>
+            <div class="masthead-5">
+                <div class="container px-4 px-lg-5 text-left">
+                    <p>Avocette élégante (<em>Recurvirostra avocetta</em>) en chasse</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- About-->
+        <section class="content-section bg-light section-bg" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Utiliser les données SIG pour comprendre et préserer la biodiversité de nos territoires</h2>
+                        <p class="lead mb-5">
+                            Je produis des cartes et je manipule des données SIG avec un large panel d'outils.<br>
+                            Voir quelques-unes de mes réalisations :
+                        </p>
+                        <a class="btn btn-more" href="#portfolio">Réalisations<br>cartographiques</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIG-->
+        <section class="masthead_2 text-white text-center" id="sig">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="text-secondary mb-0">Les outils que j'utilise</h2>
+                </div>
+
+                <div class="col-lg-1 col-md-6 mb-5"></div>
+                <h3 class="mb-5">SIG et WebSIG</h3>
+
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/qgis-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>QGIS</strong></h4>
+                        <p class="text-faded mb-0">Pour la datavisualisation et le traitement de données graphiques</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/arcgis-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>L'environnement ESRI</strong></h4>
+                        <p class="text-faded mb-0">Pour la datavisualisation et le traitement de données graphiques</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/leaflet-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>Leaflet<br>Lizmap<br>QGIS Server</strong></h4>
+                        <p class="text-faded mb-0">Pour la visualisation web des données géographiques avec les outils open-source</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/geo-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>L'environnement GEO</strong></h4>
+                        <p class="text-faded mb-0">Pour la visualisation web des données géographiques avec une technologie propriétaire</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-1 col-md-6 mb-5"></div>
+                <h3 class="mb-5">Programmation et développement</h3>
+                
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-1 col-md-6 mb-5 mb-lg-0">
+
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/python-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>Python</strong></h4>
+                        <p class="text-faded mb-0">Pour l'automatisation de tâches</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/dev_web-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>HTML<br>CSS<br>PHP</strong></h4>
+                        <p class="text-faded mb-0">Pour le développement de sites et d'applications web</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/kotlin-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>Kotlin</strong></h4>
+                        <p class="text-faded mb-0">Pour le développement d'applications android</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/sql-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>SQL</strong></h4>
+                        <p class="text-faded mb-0">Pour la manipulation de bases de données relationnelles</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/r_studio-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>R</strong></h4>
+                        <p class="text-faded mb-0">Pour la manipulation de données statistiques</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-1 col-md-6 mb-5"></div>
+                <h3 class="mb-5">IDE</h3>
+                
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-1 col-md-6 mb-5 mb-lg-0">
+
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/pycharm-icon.png" class="img-fluid d-block"></span>
+                        <h4><strong>PyCharm</strong></h4>
+                        <p class="text-faded mb-0">Pour l'utilisation de python</p>
+                    </div>  
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/adroid_studio-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>Android Studio</strong></h4>
+                        <p class="text-faded mb-0">Pour le développement d'applications android</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/vsc-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>Visual Studio Code</strong></h4>
+                        <p class="text-faded mb-0">Pour l'utilisation de tous les langages</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/R_Studio_Logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>R Studio</strong></h4>
+                        <p class="text-faded mb-0">Pour l'utilisation de R</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/bdd-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>Pg Admin 4<br>DBeaver</strong></h4>
+                        <p class="text-faded mb-0">Pour la gestion de bases de données relationnelles</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-1 col-md-6 mb-5"></div>
+                <h3 class="mb-5">Traitements de données</h3>
+                
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/fme-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>FME</strong></h4>
+                        <p class="text-faded mb-0">Pour l'automatisation de chînes de traitement de données</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><img src="assets/icon/images_sat-logo.png" class="img-fluid d-block"></span>
+                        <h4><strong>Agisoft Metashape<br>(Sentinel-2, Landsat)</strong></h4>
+                        <p class="text-faded mb-0">Pour le traitement d'images satellites</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Naturalisme -->
+        <section class="content-section bg-light section-bg" id="naturalisme">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Expertiser les territoires pour connaître et gérer la biodiversité et les espaces naturels</h2>
+                        <p class="lead mb-5">
+                            J'inventorie les espèces sauvages pour mieux comprendre les dynamiques d'évolution de la biodiversité.<br>
+                            Mes domaines d'expertise et quelques photos :
+                        </p>
+                        <a class="btn btn-more" href="#services">Expertise<br>& Photos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="mb-5">Portfolio</h3>
+                    <h2 class="text-secondary mb-0">Projets récents</h2>
+                </div>
+
+                <div class="col-lg-1 col-md-6 mb-5"></div>
+
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="portfolio/os_farm/index.html">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h4 mb-1">OS Farm - La Vauzelle (17)</div>
+                                    <p class="mb-0">Relevés de terrain, productions cartographiques et diffusion des données</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid d-block" src="assets/img/Communes_parcelles.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h4 mb-1">Projet « Chouettes Chevêches »</div>
+                                    <p class="mb-0">Projet de cartographie et d'analyse des potentialités de nidification de chouettes chevêches 
+                                        sur le territoire communal</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid d-block" src="assets/img/Localisation couples chouettes.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h4 mb-1">Inventaires en forêt</div>
+                                    <p class="mb-0">Inventaires naturalistes en forêt de Boulogne (47) pour l'Office National des Forêts (ONF)</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid d-block" src="../siteweb/assets/img/IMG_1373.JPG" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h4 mb-1">Valorisation de la biodiversité dans les vignes (Le Pallet - 44)</div>
+                                    <p class="mb-0">Inventaires naturalistes dans les vignes du Musée du Vignoble Nantais,
+                                        création de panneaux pédagagogiques et médiation culturelle et scientifique</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid d-block" src="assets/img/panneau_fauche.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h4 mb-1">Médiation culturelle et scientifique</div>
+                                    <p class="mb-0">Médiation autour des enjeux eaux auprès de tous les publics dans les marais de Brière (44)</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid d-block" src="assets/img/Frise finale.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h4 mb-1">Chantiers de gestion écologique</div>
+                                    <p class="mb-0">Chantiers de gestion écologique dans divers contextes : agricole, ripisylve, falaises calcicoles, clairière foestière</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid d-block" src="assets/img/1745243127879_copie.jpg" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Observations naturalistes -->
+        <section class="content-section bg-light section-bg" id="observations">
+                <div class="container px-4 px-lg-5 text-center">
+                    <div class="content-section-heading">
+                        <h3 class="text-secondary mb-0">Carte interactive</h3>
+                        <h2 class="mb-5">Visualiser les données d'observations naturalistes</h2>
+                    </div>
+                    <p class="lead mb-5">
+                        Cliquez sur la carte ci-dessous pour accéder à une carte interactive présentant les données d'observations naturalistes que j'ai collectées et traitées.
+                    </p>
+                </div>
+        </section>
+
+        <div class="map-preview-bg">
+            <div class="map">
+                <a href="map/map.html">
+                    <div id="map_preview" class="map-preview">
+                        <!-- Preview de la carte -->
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <section class="content-section bg-light section-bg text-center" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Contact</h3>
+                    <h2 class="mb-5">Me contacter par email</h2>
+                </div>
+                <p class="lead mb-5">
+                    Une question sur un projet SIG ou une demande de collaboration ?<br>
+                    Cliquez sur le bouton ci-dessous pour m'envoyer un message directement.
+                </p>
+                <a class="btn btn-more" href="mailto:nolan.lavenus@exemple.fr?subject=Contact%20depuis%20le%20Portfolio&body=Bonjour%20Nolan,">
+                    <i class="fas fa-envelope me-2"></i> Envoyer un message
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer-custom">
+            <div class="horizontal-wrapper">
+                <span class="footer-brand">Copyright © Nolan LAVENUS 2026</span>
+                <ul class="nav-links">
+                    <li><a href="https://github.com/NolanLavenus" class="github-icon-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> Github</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script type="module" src="js/const.js"></script>
+        <script type="module" src="js/scroll.js"></script>
+        <script type="module" src="js/nav.js"></script>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="map/queries.js"></script>
+        <script src="map/map_preview.js"></script>
+    </body>
+</html>

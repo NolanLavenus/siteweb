@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Nolan Lavenus</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Flaticon uIcons (Thin Straight) -->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel ="stylesheet" href = "../css/styles.css">
+        <link rel ="stylesheet" href = "../css/styles_custom.css">
+        <link href="../css/MarkerCluster.css" rel="stylesheet">
+        <link href="../css/MarkerCluster.Default.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </head>
+
+    <body id="page-top">
+        <!-- Menu Mobile / Bouton Filtres (Doit être en dehors du flux principal) -->
+        <nav id="nav-mobile" class="mobile-btn-active active">
+            <button class="menu-toggle" aria-label="Ouvrir les filtres" id="filter-toggle">
+                <i class="fas fa-filter"></i>
+            </button>
+    
+            <div class="mobile-sidebar" id="filter-sidebar-mobile">
+                <div class="sidebar-header">
+                    <span class="nav-menu">Filtres</span>
+                    <button class="close-menu" id="filter-close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mobile-filter-container">
+                    <!-- Filtre Classe -->
+                    <div class="filter-group">
+                        <label for="filter_mobile_classe">Classe taxonomique</label>
+                        <select id="filter_mobile_classe" class="filter-select">
+                        </select>
+                    </div>
+                
+                    <!-- Filtre Nom vernaculaire -->
+                    <div class="filter-group">
+                        <label for="filter_mobile_nom_vern">Nom vernaculaire</label>
+                        <select id="filter_mobile_nom_vern" class="filter-select">
+                        </select>
+                    </div>
+                
+                    <!-- Filtre Nom scientifique -->
+                    <div class="filter-group">
+                        <label for="filter_mobile_lb_nom">Nom scientifique</label>
+                        <select id="filter_mobile_lb_nom" class="filter-select">
+                        </select>
+                    </div>
+                
+                    <!-- Filtre Type d'observation -->
+                    <div class="filter-group">
+                        <label for="filter_mobile_type_obs">Type d'observation</label>
+                        <select id="filter_mobile_type_obs" class="filter-select">
+                        </select>
+                    </div>
+                
+                    <!-- Filtre Sexe -->
+                    <div class="filter-group">
+                        <label for="filter_mobile_sexe">Sexe</label>
+                        <select id="filter_mobile_sexe" class="filter-select">
+                        </select>
+                    </div>
+                
+                    <!-- Filtre Abondance -->
+                    <div class="filter-group">
+                        <label for="filter_mobile_abondance">Abondance</label>
+                        <select id="filter_mobile_abondance" class="filter-select">
+                        </select>
+                    </div>
+                
+                    <!-- Filtre Stade -->
+                    <div class="filter-group">
+                        <label for="filter_mobile_stade">Stade de vie</label>
+                        <select id="filter_mobile_stade" class="filter-select">
+                        </select>
+                    </div>
+
+                    <button class="filter-reset" onclick="resetFilters()">Réinitialiser les filtres</button>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="footer-container">
+            <div class="global-container">
+                <!-- Barre latérale Desktop (cachée sur mobile via CSS) -->
+                <aside class="sidebar-desktop">
+                    <div>
+                        <h3>Filtres</h3>
+                    </div>
+
+                    <div class="desktop-filter-container">
+
+                        <!-- Filtre Classe -->
+                        <div class="filter-group">
+                            <label for="filter_desktop_classe">Classe taxonomique</label>
+                            <select id="filter_desktop_classe" class="filter-select">
+                            </select>
+                        </div>
+                    
+                        <!-- Filtre Nom vernaculaire -->
+                        <div class="filter-group">
+                            <label for="filter_desktop_nom_vern">Nom vernaculaire</label>
+                            <select id="filter_desktop_nom_vern" class="filter-select">
+                            </select>
+                        </div>
+                    
+                        <!-- Filtre Nom scientifique -->
+                        <div class="filter-group">
+                            <label for="filter_desktop_lb_nom">Nom scientifique</label>
+                            <select id="filter_desktop_lb_nom" class="filter-select">
+                            </select>
+                        </div>
+                    
+                        <!-- Filtre Type d'observation -->
+                        <div class="filter-group">
+                            <label for="filter_desktop_type_obs">Type d'observation</label>
+                            <select id="filter_desktop_type_obs" class="filter-select">
+                            </select>
+                        </div>
+                    
+                        <!-- Filtre Sexe -->
+                        <div class="filter-group">
+                            <label for="filter_desktop_sexe">Sexe</label>
+                            <select id="filter_desktop_sexe" class="filter-select">
+                            </select>
+                        </div>
+                    
+                        <!-- Filtre Abondance -->
+                        <div class="filter-group">
+                            <label for="filter_desktop_abondance">Abondance</label>
+                            <select id="filter_desktop_abondance" class="filter-select">
+                            </select>
+                        </div>
+                    
+                        <!-- Filtre Stade -->
+                        <div class="filter-group">
+                            <label for="filter_desktop_stade">Stade de vie</label>
+                            <select id="filter_desktop_stade" class="filter-select">
+                            </select>
+                        </div>
+                    
+                        <button class="filter-reset" onclick="resetFilters()">Réinitialiser les filtres</button>
+                    </div>
+                </aside>
+            
+                <!-- Conteneur de la Carte -->
+                <main class="content-map">
+                    <div id="map"></div>
+                </main>
+            </div>
+                
+            <!-- Footer Mobile / Tablette -->
+            <footer class="map-footer">
+                <span>Copyright © Nolan LAVENUS 2026</span>
+                <a href="https://github.com/NolanLavenus" target="_blank"><i class="fab fa-github"></i></a>
+            </footer>
+        </div>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script type="module" src="../js/const.js"></script>
+        <script type="module" src="../js/nav.js"></script>
+
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="queries.js"></script>
+        <script src="fiches_info.js"></script>
+        <script src="filtres.js"></script>
+        <script src="filtres_mobile.js"></script>
+        <script src="../js/leaflet.js"></script>
+        <script src="../js/leaflet.markercluster.js"></script>
+        <script src="map.js"></script>
+    </body>
+</html>
